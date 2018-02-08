@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style type="text/css">
+            .pass{
+                width:200px;
+                height: 20px;
+            }
+        </style>
+        <script>
+            window.onload=function(){
+                var btn=document.getElementById("btn");
+                var pass=document.getElementById("pass")
+                btn.onmousedown=function(){
+                    pass.type="number"
+                };
+                btn.onmouseup=btn.onmouseout=function(){
+                    pass.type="password"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="password" name="" id="pass" value="123456" class="pass"/>
+        <input type="button" name="" id="btn" value="点击显示" />
+    </body>
+</html>
