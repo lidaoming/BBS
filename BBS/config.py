@@ -11,3 +11,4 @@ password='toor'
 SQLALCHEMY_TRACK_MODIFICATIONS=False
 DB_URI='mysql+mysqldb://{}:{}@{}:{}/{}?charset=utf8'.format(username,password,host,port,database)
 SQLALCHEMY_DATABASE_URI=DB_URI
+CMS_USER_ID='cms_user_id'
